@@ -4,10 +4,13 @@ Fork of Motion-detection-OpenCV
 Python/OpenCV script that detect motion on webcam and allow record it to a file.
 
 ## Changes ##
-- Updated _MotionDetectorContours.py_ to Python 3.x
-- Updated _MotionDetectorContours.py_ to OpenCV 4.x version
+- Updated to Python 3.x
+- Updated to OpenCV 4.x version
 - Removed cv.Erode
   - You can add it back following [the example](https://docs.opencv.org/4.2.0/db/df6/tutorial_erosion_dilatation.html)
+  
+## Note ##
+I think `MotionDetectorContours.py` works better, may be my re-implementation made something wrong in `MotionDetector.py`
 
 ## The simple way ##
 
