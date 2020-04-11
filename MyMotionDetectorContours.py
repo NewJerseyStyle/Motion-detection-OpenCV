@@ -53,7 +53,7 @@ class MotionDetectorAdaptative():
             if not self.isRecording:
                 if self.somethingHasMoved():
                     self.trigger_time = instant #Update the trigger_time
-                    if instant > started:#Wait 5 second after the webcam start for luminosity adjusting etc..
+                    if instant > started +10:#Wait 5 second after the webcam start for luminosity adjusting etc..
                         print("Something is moving !")
                         if self.doRecord: #set isRecording=True only if we record a video
                             self.isRecording = True
